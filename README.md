@@ -1,1 +1,2 @@
-Fundamental Project README
+# DevOps Core Fundamental Project Specification
+## PantryPal

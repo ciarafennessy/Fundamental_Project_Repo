@@ -13,6 +13,7 @@ This repository contains my submission for the QA DevOps Core Fundamental Projec
 * [Known Issues](#Known-Issues)
 * [Future Work](#Future-Work)
  <br>
+ 
  ### Project Brief: 
  ### App Design:
  ### CI Pipeline:  

@@ -3,30 +3,28 @@ from application import db
 
 class Recipes(db.Model):
     recipe_id = db.Column(db.Integer, primary_key=True)
-    recipe_name = db.Column(db.String(50))
-    recipe_time = db.Column(db.Integer)
-    servings = db.Column(db.Integer)
+    recipe_name = db.Column(db.String(50), nullable=False)
+    recipe_time = db.Column(db.String(50), nullable=False)
+    servings = db.Column(db.Integer, nullable=False)
     recipe_instruction = db.relationship('Instructions', backref='recInstructBr')
-    recipe_ingredients = db.relationship('Recipes_Ingredients', backref='recIngBr')
-
+    recipe_ingredient = db.relationship('Ingredients', backref='recIngredBr')
+    
 
 class Instructions(db.Model):
     instruction_id = db.Column(db.Integer, primary_key=True)
-    instruction = db.Column(db.String(1000))
-    step = db.Column(db.String(10))
+    step = db.Column(db.String(10), nullable=False)
+    instruction = db.Column(db.String(1000), nullable=False)
     recipe_id = db.Column(db.Integer, db.ForeignKey('recipes.recipe_id'))
 
 class Ingredients(db.Model):
     ingredient_id = db.Column(db.Integer, primary_key=True)
-    ingredient_name = db.Column(db.String(20))
-    ingredient_recipe = db.relationship('Recipes_Ingredients', backref='ingRecBr')
-
-
-class Recipes_Ingredients(db.Model):
-    recipe_ingredient_id = db.Column(db.Integer, primary_key=True)
-    quantity = db.Column(db.String(50))
+    ingredient_name_quantity = db.Column(db.String(50), nullable=False)
     recipe_id = db.Column(db.Integer, db.ForeignKey('recipes.recipe_id'))
-    ingredient_id = db.Column(db.Integer, db.ForeignKey('ingredients.ingredient_id'))
+  
+
+
+
+
     
 
 

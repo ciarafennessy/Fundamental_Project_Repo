@@ -7,6 +7,10 @@
                 {{ form.hidden_tag() }}
                 {{ form.recipe_name.label }} {{ form.recipe_name }}
                 <br>
+                {{form.recipe_time.label}} {{form.recipe_time }}
+                <br>
+                {{form.servings.label}} {{form.servings }}
+                <br>
                 {{ form.submit }}
             {{ message }}
 	    </form>

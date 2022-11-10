@@ -3,7 +3,6 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_wtf import FlaskForm
 from wtforms import StringField, SubmitField, SelectField
 from wtforms.validators import DataRequired
-import pymysql
 import os
 
 app = Flask(__name__)

@@ -17,4 +17,5 @@ class AddIngredient(FlaskForm):
 class AddInstructions(FlaskForm):
     step = StringField('Step Number')
     instruction = StringField('Write your instructions here:')
+    recipe = SelectField('Add to recipe:', choices=[])
     submit = SubmitField('Submit')

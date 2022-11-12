@@ -12,13 +12,6 @@ def recipes():
     recipes = Recipes.query.all()
     return render_template('recipes.html', recipes=recipes)
 
-@app.route('/recipe-<int:rid>')
-def recipe(rid):
-    recipe = Recipes.query.filter_by(recipe_id=rid).first()
-    maxid = Recipes.query.order_by(Recipes.recipe_id.desc()).first().recipe_id
-    return render_template('recipe.html', recipe=recipe, maxid=maxid)
-
-
 @app.route('/add-recipe', methods= ['GET', 'POST'])
 def add_recipe():
     form = AddRecipe()
@@ -35,28 +28,35 @@ def add_recipe():
 @app.route('/add-ingredients', methods=['GET', 'POST'])
 def add_i():
     form = AddIngredient()
-    recipes = Recipes.query.all()
+    recipes = Recipes.query.order_by(Recipes.recipe_id.desc()).all()
     for recipe in recipes:
         form.recipe.choices.append((recipe.recipe_id, recipe.recipe_name))
     if request.method == 'POST':
         ing_quant = form.i_name.data
         recipe_id = form.recipe.data
-        ingredient = Ingredients(ingredient_name_quantity = ing_quant)
-        db.session.add(ingredient, recipe_id)
+        ingredient = Ingredients(ingredient_name_quantity = ing_quant, recipe_id = recipe_id)
+        db.session.add(ingredient)
         db.session.commit()
         return redirect(url_for('add_i'))
     return render_template('add_ingredient.html', form=form)
 
 
-@app.route('/add-instructions/<int:rid>', methods=['GET', 'POST'])
-def add_inst(rid):
+@app.route('/add-instructions', methods=['GET', 'POST'])
+def add_inst():
     form = AddInstructions()
+    recipes = Recipes.query.order_by(Recipes.recipe_id.desc()).all()
+    for recipe in recipes:
+        form.recipe.choices.append((recipe.recipe_id, recipe.recipe_name))
     if request.method == 'POST':
-        step = form.step.data
-        instruction = form.step.data
-        rid = Recipes.query.filter_by(id=instruction.recipe_id).first().recipe_id
+        stp = form.step.data
+        inst = form.instruction.data
+        recipe_id = form.recipe.data
+        instruction = Instructions(step = stp, instruction = inst, recipe_id = recipe_id)
+        db.session.add(instruction)
         db.session.commit()
-        return redirect(url_for('recipe', rid=rid))
-    return render_template('update_options.html', form=form)
+        return redirect(url_for('add_inst'))
+    return render_template('add_instruction.html', form=form)
+
+
 
 

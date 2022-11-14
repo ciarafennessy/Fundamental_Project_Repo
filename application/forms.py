@@ -29,3 +29,4 @@ class UpdateInstructions(FlaskForm):
 class SelectRecipe(FlaskForm):
     recipe_id = SelectField('Recipe', choices=[])
     submit = SubmitField('Choose Recipe')
+

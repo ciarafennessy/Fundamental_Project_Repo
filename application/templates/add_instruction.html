@@ -20,4 +20,9 @@
          <button type="submit">Return to adding ingredients</button>
       </form>
 
+      <br>
+      <div class='form'>
+            <form action="{{ url_for('recipes') }}">
+               <button type="submit">Finish and view list of recipes</button>
+            </form> 
 {% endblock body%}

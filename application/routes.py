@@ -17,7 +17,7 @@ def recipe(rid):
     recipe = Recipes.query.filter_by(recipe_id=rid).first()
     maxid = Recipes.query.order_by(Recipes.recipe_id.desc()).first().recipe_id
     return render_template('recipe.html', recipe=recipe, maxid=maxid)
-
+    
 @app.route('/add-recipe', methods= ['GET', 'POST'])
 def add_recipe():
     form = AddRecipe()
@@ -100,6 +100,15 @@ def delete_recipe(rid):
         db.session.delete(ingredient)
     db.session.commit()
     return redirect(url_for('recipes'))
+
+@app.route('/rewrite-ingredients/<int:rid>')
+def rewrite_ing(rid):
+    recipe = Recipes.query.filter_by(recipe_id=rid).first()
+    ingredients = recipe.recipe_ingredient
+    for ingredient in ingredients:
+        db.session.delete(ingredient)
+    db.session.commit()
+    return redirect(url_for('add_i'))
 
 
 

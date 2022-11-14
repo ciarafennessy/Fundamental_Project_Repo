@@ -11,6 +11,8 @@
 {{ ingredient.ingredient_name_quantity }}
 {% endfor %}
 <br>
+<a href="{{ url_for('rewrite_ing', rid=recipe.recipe_id) }}">Rewrite Ingredients</a> 
+<br>
 <br>
 <h3>Instructions</h3>
 {% for step in recipe.recipe_instruction %}

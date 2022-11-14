@@ -1,0 +1,40 @@
+{% extends 'layout.html' %}
+{% block body %}
+<h2> {{recipe.recipe_name}} </h2>
+<br>
+<h3>{{recipe.recipe_time}}</h3>
+<h3>Servings: {{recipe.servings}}</h3>
+<br>
+<h3> Ingredients:</h3>
+{% for ingredient in recipe.recipe_ingredient %}
+<br>
+{{ ingredient.ingredient_name_quantity }}
+{% endfor %}
+<br>
+<br>
+<h3>Instructions</h3>
+{% for step in recipe.recipe_instruction %}
+
+<h4>{{step.step}}</h4>
+{{step.instruction}}
+<br>
+<a href="{{ url_for('update_inst', instid=step.instruction_id) }}">Update Instruction</a> 
+{%endfor%}
+<br>
+<br>
+<a href="{{ url_for('add_inst', rid=recipe.recipe_id) }}">Add Instructions</a> 
+<br>
+<br>
+<a href="{{ url_for('delete_recipe', rid=recipe.recipe_id) }}"> Delete Recipe </a>
+<br>
+
+<br>
+{% if recipe.recipe_id == maxid %}
+<a href="{{ url_for('recipes') }}">Back to Recipe List</a>
+{% else %}
+<a href="{{ url_for('recipe', rid=recipe.recipe_id+1) }}">Next Recipe</a>
+{% endif %}
+
+
+
+{% endblock body %}

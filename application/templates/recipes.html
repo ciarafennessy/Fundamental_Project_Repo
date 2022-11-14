@@ -3,9 +3,7 @@
 <h2> Recipes </h2>
 {% for recipe in recipes %}
 <h3>{{ recipe.recipe_name}}</h3>
-{% for recipe in recipe.recipe_questions %}
-<!--<a href="{{ url_for('question', qid=question.id) }}">{{question}}</a> | <a href="{{ url_for('update_q', qid=question.id) }}"> Update </a> | <a href="{{ url_for('delete_q', qid=question.id) }}"> Delete </a>-->
+<a href="{{ url_for('recipe', rid=recipe.recipe_id) }}">{{recipe}}</a> | 
 <br>
-{% endfor %}
 {% endfor %}
 {% endblock body %}

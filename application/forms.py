@@ -19,3 +19,13 @@ class AddInstructions(FlaskForm):
     instruction = StringField('Write your instructions here:')
     recipe = SelectField('Add to recipe:', choices=[])
     submit = SubmitField('Submit')
+
+class UpdateInstructions(FlaskForm):
+    inst_step = StringField('Step Number', validators=[DataRequired(message="This field cannot be left blank")])
+    inst = StringField('Instruction', validators=[DataRequired(message="This field cannot be left blank")])
+    submit = SubmitField('Update Instruction')
+
+
+class SelectRecipe(FlaskForm):
+    recipe_id = SelectField('Recipe', choices=[])
+    submit = SubmitField('Choose Recipe')

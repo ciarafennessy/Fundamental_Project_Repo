@@ -107,11 +107,9 @@ The database contains three tables: a Recipes table, which has a one-to-many rel
  
  ![Select Recipe1](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/Select-Recipe1.png)
  
- 
+ <br>
  
  ![Select Recipe2](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/Select-Recipe2.png)
- 
- <br>
  
  ### Known Issues:
  

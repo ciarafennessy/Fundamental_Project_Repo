@@ -3,6 +3,7 @@ from application.forms import AddRecipe, AddIngredient, AddInstructions, UpdateI
 from application.models import Recipes, Instructions, Ingredients
 from flask import render_template, request, redirect, url_for
 
+@app.route('/')
 @app.route('/home')
 def home():
     return render_template('home.html')

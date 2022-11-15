@@ -9,7 +9,6 @@ This repository contains my submission for the QA DevOps Core Fundamental Projec
 * [Testing](#Testing)
 * [Project Management](#Project-Management)
 * [The App](#The-App)
-* [Updates](#Updates)
 * [Known Issues](#Known-Issues)
 * [Future Work](#Future-Work)
  <br>
@@ -85,6 +84,5 @@ The database contains three tables: a Recipes table, which has a one-to-many rel
  
  <br>
  
- ### Updates:
  ### Known Issues:
  ### Future Work:

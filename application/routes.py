@@ -15,8 +15,7 @@ def recipes():
 @app.route('/recipe-<int:rid>')
 def recipe(rid):
     recipe = Recipes.query.filter_by(recipe_id=rid).first()
-    maxid = Recipes.query.order_by(Recipes.recipe_id.desc()).first().recipe_id
-    return render_template('recipe.html', recipe=recipe, maxid=maxid)
+    return render_template('recipe.html', recipe=recipe)
     
 @app.route('/add-recipe', methods= ['GET', 'POST'])
 def add_recipe():

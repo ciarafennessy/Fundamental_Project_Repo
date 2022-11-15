@@ -29,14 +29,6 @@
 <br>
 <a href="{{ url_for('delete_recipe', rid=recipe.recipe_id) }}"> Delete Recipe </a>
 <br>
-
-<br>
-{% if recipe.recipe_id == maxid %}
-<a href="{{ url_for('recipes') }}">Back to Recipe List</a>
-{% else %}
-<a href="{{ url_for('recipe', rid=recipe.recipe_id+1) }}">Next Recipe</a>
-{% endif %}
-
-
+<a href="{{ url_for('recipes')}}"> Return to All Recipes </a>
 
 {% endblock body %}

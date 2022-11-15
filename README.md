@@ -25,7 +25,7 @@ This repository contains my submission for the QA DevOps Core Fundamental Projec
  I started trying to make sense of the aformentioned intricacies by designing an ERD for my database:
  <br>
  
-![image1](https://www.smokinfox.co.uk/wp-content/uploads/sites/30/2017/02/have-look.jpg)
+![ERD](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/main/Figures/ERDPantryPal%20copy.png)
 
  ### CI Pipeline:  
  ### Risk Assessment:

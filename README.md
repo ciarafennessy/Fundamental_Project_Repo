@@ -111,6 +111,17 @@ The database contains three tables: a Recipes table, which has a one-to-many rel
  
 ### Known Issues:
  
-
+ <br>
+ 
+ *Nothing to prevent dublicate recipes, steps or instructions. 
+ *The rewrite ingredients option is a little clunky - however, I chose this over having a hyperlink beside every ingredient in ever recipe in order to update an individual ingredient. 
+<br>
  
  ### Future Work:
+ 
+ <br>
+ *I would like to add a search function that allows users to search recipes by the ingredients they contain. 
+ *As a stretch goal, it would be nice to implement a login system that limits users to being able to update/delete their own recipes only. The login system would also offer other opportunities for advancement, like the ability to save recipes to a personal "favourites" list.
+ 
+ 
+ 

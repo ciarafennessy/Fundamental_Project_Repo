@@ -59,8 +59,7 @@ The database contains three tables: a Recipes table, which has a one-to-many rel
  
  ### Project Management:
  ## The App: 
- 
- <br>
+  <br>
  
  ![home](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/Home.png)
  
@@ -94,27 +93,10 @@ The database contains three tables: a Recipes table, which has a one-to-many rel
  ![Recipe2](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/Recipe-2.png)
  
  <br>
- The user can view the recipe with ease an even make adjustments to it. The <rewrite ingredients> link deletes the ingredient list and redirects the user to the <add ingredients> page again so that they can input the ingredient entries again. The <update instructions> hyperlink exists for every instruction in each recipe, when clicked it redirects the user to the below page.
+ The user can view the recipe with ease an even make adjustments to it. The <rewrite ingredients> link deletes the ingredient list and redirects the user to the <add ingredients> page again so that they can input the ingredient entries again. The <update instructions> hyperlink exists for every instruction in each recipe, when clicked it redirects the user to the below page
  
- ![Update Instructions](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/Update%20Instruction.png)
+### Known Issues:
  
- <br>
- Here, the user may overwrite the database entry for the original instruction with an ammended version, clicking submit redirects the user back to the recipe page they were originally on. 
- 
- <br>
- 
- As an alternative to finding their recipe among the list on the <Recipes> page, the user may click the <Select Recipe> option in the nav bar and select a recipe from the drop-down list. This select feature allows the user to narrow down their search by hovering over the list and typing the first few letters of the recipe they're looking for, this highlights the recipe beginning with those letters in the list.
- 
- ![Select Recipe1](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/Select-Recipe1.png)
- 
- <br>
- 
- ![Select Recipe2](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/Select-Recipe2.png)
- 
- ### Known Issues:
- 
- <br>
- 
- <br>
+
  
  ### Future Work:

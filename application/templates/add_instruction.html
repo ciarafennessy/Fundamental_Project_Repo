@@ -1,0 +1,28 @@
+{% extends 'layout.html' %}
+{% block body %}
+<h2> Add Instructions </h2>
+<br>
+<div class='form'>
+            <form method='POST' action=''>
+                {{ form.hidden_tag() }}
+                {{ form.step.label }} {{ form.step }}
+                {{form.instruction.label }} {{form.instruction }}
+                {{form.recipe.label }} {{form.recipe}}
+                <br>
+                {{ form.submit }}
+            {{ message }}
+	    </form>
+</div>
+
+<br>
+<div class='form'>
+      <form action="{{ url_for('add_i') }}">
+         <button type="submit">Return to adding ingredients</button>
+      </form>
+
+      <br>
+      <div class='form'>
+            <form action="{{ url_for('recipes') }}">
+               <button type="submit">Finish and view list of recipes</button>
+            </form> 
+{% endblock body%}

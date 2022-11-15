@@ -1,0 +1,22 @@
+{% extends 'layout.html' %}
+{% block body %}
+<h2> Add Ingredients </h2>
+<br>
+<div class='form'>
+            <form method='POST' action=''>
+                {{ form.hidden_tag() }}
+                {{ form.i_name.label }} {{ form.i_name }}
+                {{form.recipe.label }} {{form.recipe }}
+                <br>
+                {{ form.submit }}
+            {{ message }}
+	    </form>
+</div>
+
+<br>
+<div class='form'>
+      <form action="{{ url_for('add_inst') }}">
+         <button type="submit">Click to move on to adding instructions</button>
+      </form>
+
+{% endblock body%}

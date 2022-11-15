@@ -64,25 +64,54 @@ The database contains three tables: a Recipes table, which has a one-to-many rel
  
  ![home](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/Home.png)
  
+ <br>
+ 
+ The user is first presented with a home page. The nav bar provides the user with all essential links. To add or view a recipe the user must only click upon the respective link. If they click on <Add a Recipe> they will be brought to this page:
+ 
+ 
  ![Add Recipe](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/Add_Recipe.png)
+ 
+ <br>
+ Here, the user may add in the title, time and servings related to the recipe they want to add to the web application. Clicking submit redirects them to this page:
  
  ![Add Ingredients](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/Add_Ingredients.png)
  
+ <br>
+ The user may add as many ingredients as the recipe requires. Each time they submit a new ingredient they will be redirected back to the same page to submit another. There is no need to select the recipe that the ingredients belong to every time, as the select box is set to display the last recipe added as the default. When they have added all their ingredients they may click to link to move onto adding instructions to their recipe; which brings them here:
+ 
  ![Add Instructions](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/Add_Instructions.png)
  
+ <br>
+ As before, the user may fill in as many steps and instructions as the recipe requires. When they are satisfied, they can navigate to the <Recipes> page where they will find their recipe added to the list of recipes on the site.
+ 
  ![Recipes](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/Recipes.png)
+ 
+ <br>
+ Here, they can click the link below the recipe name to find the recipe outlined in full.
  
  ![Recipe1](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/Recipe-1.png)
  
  ![Recipe2](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/Recipe-2.png)
  
+ <br>
+ The user can view the recipe with ease an even make adjustments to it. The <rewrite ingredients> link deletes the ingredient list and redirects the user to the <add ingredients> page again so that they can input the ingredient entries again. The <update instructions> hyperlink exists for every instruction in each recipe, when clicked it redirects the user to the below page.
+ 
  ![Update Instructions](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/Update%20Instruction.png)
+ 
+ <br>
+ Here, the user may overwrite the database entry for the original instruction with an ammended version, clicking submit redirects the user back to the recipe page they were originally on. 
+ 
+ <br>
+ As an alternative to finding their recipe among the list on the <Recipes> page, the user may click the <Select Recipe> option in the nav bar and select a recipe from the drop-down list. This select feature allows the user to narrow down their search by hovering over the list and typing the first few letters of the recipe they're looking for - this highlights the reecipe beginning with those letters in the list.
+
+<br>
  
  ![Select Recipe1](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/Select-Recipe1.png)
  
  ![Select Recipe2](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/Select-Recipe2.png)
  
- <br>
+<br>
+
  
  ### Known Issues:
  ### Future Work:

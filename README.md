@@ -7,6 +7,7 @@ This repository contains my submission for the QA DevOps Core Fundamental Projec
 * [Database Design](#Database_Design)
 * [Risk Assessment](#Risk-Assessment)
 * [Testing](#Testing)
+* [Project Management](#Project-Management)
 * [The App](#The-App)
 * [Updates](#Updates)
 * [Known Issues](#Known-Issues)
@@ -34,10 +35,11 @@ This repository contains my submission for the QA DevOps Core Fundamental Projec
 
 <br>
 
-The database contains three tables, a Recipes table, which has a one-to-many relationship with two other tables: Ingredients and Instructions. This allows for each recipe to be associated with any number of instructions, steps and ingredients. 
+The database contains three tables: a Recipes table, which has a one-to-many relationship with two other tables, Ingredients and Instructions. This allows for each recipe to be associated with any number of instructions, steps and ingredients. 
 
  ### Risk Assessment:
- ### Testing: 
+ ### Testing:
+ ### Project Management:
  ## The App: 
  ### Updates:
  ### Known Issues:

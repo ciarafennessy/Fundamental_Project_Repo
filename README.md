@@ -105,6 +105,8 @@ The database contains three tables: a Recipes table, which has a one-to-many rel
  
  As an alternative to finding their recipe among the list on the <Recipes> page, the user may click the <Select Recipe> option in the nav bar and select a recipe from the drop-down list. This select feature allows the user to narrow down their search by hovering over the list and typing the first few letters of the recipe they're looking for - this highlights the reecipe beginning with those letters in the list.
  
+ <br>
+ 
  ![Select Recipe1](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/Select-Recipe1.png)
  
  ![Select Recipe2](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/Select-Recipe2.png)
@@ -112,4 +114,9 @@ The database contains three tables: a Recipes table, which has a one-to-many rel
  <br>
  
  ### Known Issues:
+ 
+ <br>
+ 
+ <br>
+ 
  ### Future Work:

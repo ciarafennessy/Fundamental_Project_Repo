@@ -38,6 +38,9 @@ This repository contains my submission for the QA DevOps Core Fundamental Projec
 The database contains three tables: a Recipes table, which has a one-to-many relationship with two other tables, Ingredients and Instructions. This allows for each recipe to be associated with any number of instructions, steps and ingredients. 
 
  ### Risk Assessment:
+ 
+ ![Risk Assessment](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/Risk-Assessment.png)
+ 
  ### Testing:
  ### Project Management:
  ## The App: 

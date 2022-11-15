@@ -53,6 +53,7 @@ The database contains three tables: a Recipes table, which has a one-to-many rel
  
  <br>
  Unit testing was the only kind of testing used on this project thus far, in the future I would also like to implement integration testing and to automate the testing process via Jenkins. Unit tests were written for the create, read, update and delete aspects of the app. The figure below shows how all tests have passed through Pytest, with 99% coverage report.
+ 
  ![Pytest](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/pytest_covreport.png)
  
  <br>

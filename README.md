@@ -23,7 +23,7 @@ This repository contains my submission for the QA DevOps Core Fundamental Projec
  Some requirements of the original project brief have been set aside for future work as they were not possible to integrate, either because of the time frame changes or changes to the teaching schedule. These include: CI/CD pipeline elements, integration testing and use of virtual machines. 
  <br>
  
- ### Databse Design:
+ ### Database Design:
  
   <br>
  I chose to build a recipe application because I am a passionate cook (as you may have seen on my github profile page). It was also one of the first ideas that came to mind when tasked with creating a CRUD app. One can easily picturea website on which a user may upload their own recipes, make ammendments to those recipes, relete recipes and read the recipes of others! Such a web application is relatively easy to imagine, even if you are unsure of the intricate workings behind the scenes, as I was as a newcomer to all of these technologies. 
@@ -52,7 +52,7 @@ The database contains three tables: a Recipes table, which has a one-to-many rel
  ### Testing:
  
  <br>
- 
+ Unit testing was the only kind of testing used on this project thus far, in the future I would also like to implement integration testing and to automate the testing process via Jenkins. Unit tests were written for the create, read, update and delete aspects of the app. The figure below shows how all tests have passed through Pytest, with 99% coverage report.
  ![Pytest](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/pytest_covreport.png)
  
  <br>

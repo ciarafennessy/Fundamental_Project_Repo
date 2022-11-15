@@ -41,6 +41,14 @@ The database contains three tables: a Recipes table, which has a one-to-many rel
  
  ![Risk Assessment](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/Risk-Assessment.png)
  
+ <br>
+ 
+ The above risk assessment outlines the details of possible hazards that may be encountered by either the developer or the user of this web application. 
+ These risks were taken into consideration during the development of this app and they influenced the design of this MVP. For example, I chose not to allow the user to create an account which would allow them extra user priveledges on the app, as it was too risky to send login credentials over an unsecured HTTP connection. Likewise, Flask and SQLAlchemy were used to prevent SQL commands from being sent directly to the database. Also, in the development process, all confidential credentials  Database_uri and Sectrey_Key) were exported as variables to the terminal to prevent a data leak on Github.
+ 
+ <br>
+
+ 
  ### Testing:
  ### Project Management:
  ## The App: 

@@ -59,6 +59,31 @@ The database contains three tables: a Recipes table, which has a one-to-many rel
  
  ### Project Management:
  ## The App: 
+ 
+ <br>
+ 
+ ![home](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/Home.png)
+ 
+ ![Add Recipe](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/Add_Recipe.png)
+ 
+ ![Add Ingredients](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/Add_Ingredients.png)
+ 
+ ![Add Instructions](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/Add_Instructions.png)
+ 
+ ![Recipes](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/Recipes.png)
+ 
+ ![Recipe1](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/Recipe-1.png)
+ 
+ ![Recipe2](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/Recipe-2.png)
+ 
+ ![Update Instructions](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/Update%20Instruction.png)
+ 
+ ![Select Recipe1](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/Select-Recipe1.png)
+ 
+ ![Select Recipe2](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/Select-Recipe2.png)
+ 
+ <br>
+ 
  ### Updates:
  ### Known Issues:
  ### Future Work:

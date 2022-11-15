@@ -120,8 +120,9 @@ The database contains three tables: a Recipes table, which has a one-to-many rel
  ### Future Work:
  
  <br>
- * I would like to add a search function that allows users to search recipes by the ingredients they contain
- *  As a stretch goal, it would be nice to implement a login system that limits users to being able to update/delete their own recipes only. The login system would also offer other opportunities for advancement, like the ability to save recipes to a personal "favourites" list.
+I would like to add a search function that allows users to search recipes by the ingredients they contain
+ <br>
+As a stretch goal, it would be nice to implement a login system that limits users to being able to update/delete their own recipes only. The login system would also offer other opportunities for advancement, like the ability to save recipes to a personal "favourites" list.
 
  
  

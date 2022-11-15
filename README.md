@@ -24,6 +24,7 @@ This repository contains my submission for the QA DevOps Core Fundamental Projec
  <br>
  I started trying to make sense of the aformentioned intricacies by designing an ERD for my database:
  <br>
+ 
 ![image1](https://www.smokinfox.co.uk/wp-content/uploads/sites/30/2017/02/have-look.jpg)
 
  ### CI Pipeline:  

@@ -50,6 +50,13 @@ The database contains three tables: a Recipes table, which has a one-to-many rel
 
  
  ### Testing:
+ 
+ <br>
+ 
+ ![Pytest](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/pytest_covreport.png)
+ 
+ <br>
+ 
  ### Project Management:
  ## The App: 
  ### Updates:

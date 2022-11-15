@@ -58,6 +58,9 @@ The database contains three tables: a Recipes table, which has a one-to-many rel
  <br>
  
  ### Project Management:
+ 
+ ![Roadmap](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/Roadmap.png)
+ 
  ## The App: 
   <br>
  

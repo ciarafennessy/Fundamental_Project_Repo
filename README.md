@@ -1,6 +1,6 @@
 # DevOps Core Fundamental Project Specification
 ## PantryPal
-This repository contains my submission for the QA DevOps Core Fundamental Project Specification: a CRUD Recipe application. 
+This repository contains my submission for the QA DevOps Core Fundamental Project Specification: a CRUD Recipe application called PantryPal. 
 <br>
 ## Contents:
 * [Project Brief](#Project-Brief)

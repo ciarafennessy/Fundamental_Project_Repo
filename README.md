@@ -16,16 +16,16 @@ This repository contains my submission for the QA DevOps Core Fundamental Projec
  ### Project Brief: 
  
  <br>
-  This project required us to draw on a wide variety of knowledge and skills. We were expected to imlpement project management both in theory and in practice through the use of project management/progress tracking software (jira in the case of this project). Coding the MVP required technical knowledge of Python, Flask and MySQL. Lastly,an understanding of Git and of Pytest were needed, for mainting a VCS (version control system) and for unit testing the application, respectively. 
+  This project required us to draw on a wide variety of knowledge and skills. We were expected to imlpement project management both in theory and in practice through the use of project management/progress tracking software (jira in the case of this project). Coding the MVP required technical knowledge of Python, Flask and MySQL. Lastly, an understanding of Git and of Pytest were needed, for mainting a VCS (version control system) and for unit testing the application, respectively. 
  We were expected to work alone, with the exception of some help from an instructor upon request. The application could relate to any theme of our choosing, as long as it satisfied the CRUD criteria and utilised at least two tables with a relationship in a database.
  <br>
- Some requirements of the original project brief have been set aside for future work as they were not possible to integrate, either because of the time frame changes or changes to the teaching schedule. These include: CI/CD pipeline elements, integration testing and use of virtual machines. 
+ Some requirements of the original project brief have been set aside for future work as they were not possible to integrate, either because of time frame changes or changes to the teaching schedule. These include: CI/CD pipeline elements, integration testing and the use of virtual machines. 
  <br>
  
  ### Database Design:
  
   <br>
- I chose to build a recipe application because I am a passionate cook (as you may have seen on my github profile page). It was also one of the first ideas that came to mind when tasked with creating a CRUD app. One can easily picturea website on which a user may upload their own recipes, make ammendments to those recipes, relete recipes and read the recipes of others! Such a web application is relatively easy to imagine, even if you are unsure of the intricate workings behind the scenes, as I was as a newcomer to all of these technologies. 
+ I chose to build a recipe application because I am a passionate cook (as you may have seen on my Github profile page). It was also one of the first ideas that came to mind when tasked with creating a CRUD app. One can easily picture a website on which a user may upload their own recipes, make ammendments to those recipes, delete recipes and read the recipes of others! Such a web application is relatively easy to imagine, even if you are unsure of the intricate workings behind the scenes, as I was as a newcomer to all of these technologies. 
  <br>
  I started trying to make sense of the aformentioned intricacies by designing an ERD for my database:
  <br>
@@ -43,7 +43,7 @@ The database contains three tables: a Recipes table, which has a one-to-many rel
  <br>
  
  The above risk assessment outlines the details of possible hazards that may be encountered by either the developer or the user of this web application. 
- These risks were taken into consideration during the development of this app and they influenced the design of this MVP. For example, I chose not to allow the user to create an account which would allow them extra user priveledges on the app, as it was too risky to send login credentials over an unsecured HTTP connection. Likewise, Flask and SQLAlchemy were used to prevent SQL commands from being sent directly to the database. Also, in the development process, all confidential credentials  Database_uri and Sectrey_Key) were exported as variables to the terminal to prevent a data leak on Github.
+ These risks were taken into consideration during the development of this app and they influenced the design of this MVP. For example, I chose not to allow the user to create an account which would allow them extra user priveledges on the app, as it was too risky to send login credentials over an unsecured HTTP connection. Likewise, Flask and SQLAlchemy were used to prevent SQL commands from being sent directly to the database. Also, in the development process, all confidential credentials  (Database_URI, Sectrey_Key) were exported as variables to the terminal to prevent a data leak on Github.
  
  <br>
 
@@ -51,7 +51,7 @@ The database contains three tables: a Recipes table, which has a one-to-many rel
  ### Testing:
  
  <br>
- Unit testing was the only kind of testing used on this project thus far, in the future I would also like to implement integration testing and to automate the testing process via Jenkins. Unit tests were written for the create, read, update and delete aspects of the app. The figure below shows how all tests have passed through Pytest, with 99% coverage report.
+ Unit testing was the only kind of testing used on this project thus far, in the future I would also like to implement integration testing and to automate the testing process via Jenkins. Unit tests were written for the create, read, update and delete aspects of the app. The figure below shows how all tests have passed through Pytest, with a 99% coverage report.
  
  ![Pytest](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/pytest_covreport.png)
  
@@ -65,7 +65,7 @@ The database contains three tables: a Recipes table, which has a one-to-many rel
  ![Roadmap](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/Roadmap.png)
  
  <br>
- Below you can see the Burnup and Cumulative Flow diagrams produced by Jira for my final sprint. They do not follow an ideal pattern, this is for two reasons. Firstly, being new to Jira, I added many of the issues just after I had started the sprint, not knowing that it would affect the insights feature. Secondly, when I created the sprint the projected deadline for this project was two days later than what the final deadline turned out to be. Nonetheless, I am still happy with my choice of Jira as I have learned a lot from using it for this project and I believe it will be the most applicable project management tool for my career after I finish my training. 
+ Below you can see the Burnup and Cumulative Flow diagrams produced by Jira for my final sprint. They do not follow an ideal pattern, this is for two reasons. Firstly, being new to Jira, I added many of the issues just after I had started the sprint, not knowing that it would affect the insights feature. Secondly, when I created the sprint the projected deadline for this project was two days later than what the final deadline turned out to be. Nonetheless, I am still happy with my choice of Jira over a simple Kanban board as I have learned a lot from using it for this project and I believe it will be the most applicable project management tool for my career after I finish my training. 
  
  
  ![Burnup](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/main/Figures/Burnup-report.png)
@@ -90,7 +90,7 @@ The database contains three tables: a Recipes table, which has a one-to-many rel
  ![Add Ingredients](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/Add_Ingredients.png)
  
  <br>
- The user may add as many ingredients as the recipe requires. Each time they submit a new ingredient they will be redirected back to the same page to submit another. There is no need to select the recipe that the ingredients belong to every time, as the select box is set to display the last recipe added as the default. When they have added all their ingredients they may click to link to move onto adding instructions to their recipe; which brings them here:
+ The user may add as many ingredients as the recipe requires. Each time they submit a new ingredient they will be redirected back to the same page to submit another. There is no need to select the recipe that the ingredients belong to every time, as the select box is set to display the last recipe added as the default. When they have added all their ingredients they may click the link to move onto adding instructions to their recipe; which brings them here:
  
  ![Add Instructions](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/Add_Instructions.png)
  
@@ -107,7 +107,7 @@ The database contains three tables: a Recipes table, which has a one-to-many rel
  ![Recipe2](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/Recipe-2.png)
  
  <br>
- The user can view the recipe with ease an even make adjustments to it. The <rewrite ingredients> link deletes the ingredient list and redirects the user to the <add ingredients> page again so that they can input the ingredient entries again. The <update instructions> hyperlink exists for every instruction in each recipe, when clicked it redirects the user to the below page
+ The user can view the recipe with ease and even make adjustments to it. The <rewrite ingredients> link deletes the ingredient list and redirects the user to the <add ingredients> page so that they can input the ingredient entries again. The <update instructions> hyperlink exists for every instruction in each recipe, when clicked it redirects the user to the below page.
  
   ![Update Instructions](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/Update%20Instruction.png)
  
@@ -127,8 +127,8 @@ The database contains three tables: a Recipes table, which has a one-to-many rel
  
  <br>
  
- * Nothing to prevent dublicate recipes, steps or instructions. 
- * The rewrite ingredients option is a little clunky - however, I chose this over having a hyperlink beside every ingredient in ever recipe in order to update an individual ingredient. 
+ * There is nothing to prevent dublicate recipes, steps or instructions. 
+ * The rewrite ingredients option is a little clunky - however, I chose this over having a hyperlink beside every ingredient in every recipe in order to update an individual ingredient. 
 <br>
  
  ### Future Work:

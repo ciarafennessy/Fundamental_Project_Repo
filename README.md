@@ -59,7 +59,18 @@ The database contains three tables: a Recipes table, which has a one-to-many rel
  
  ### Project Management:
  
+ <br>
+ To track the progress of this project I chose to use Jira to help maintain an Agile workflow. Below you can see the roadmap I set out for myself. I broke the project into three separate sprints (mostly to help familiarise myself with how Jira works). The first sprint concentrated on brainstorming and the initial setup, the second focused on database configuration. The third sprint was where the bulk of the work was done, I split it into three epics: MVP creation, Testing and Documentation. Each epic contained multiple user stories with multiple child issues. I gave every issue a story point and time estimate. 
+ 
  ![Roadmap](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/Roadmap.png)
+ 
+ <br>
+ Below you can see the Burnup and Cumulative Flow diagrams produced by Jira for my final sprint. They do not follow an ideal pattern, this is for two reasons. Firstly, being new to Jira, I added many of the issues just after I had started the sprint, not knowing that it would affect the insights feature. Secondly, when I created the sprint the projected deadline for this project was two days later than what the final deadline turned out to be. Nonetheless, I am still happy with my choice of Jira as I have learned a lot from using it for this project and I believe it will be the most applicable project management tool for my career after I finish my training. 
+ 
+ 
+ ![Burnup](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/main/Figures/Burnup-report.png)
+ 
+ ![Cumulative Flow](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/main/Figures/Cumulative%20flow%20diagram.png)
  
  ## The App: 
   <br>

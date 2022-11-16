@@ -79,7 +79,7 @@ The database contains three tables: a Recipes table, which has a one-to-many rel
  
  <br>
  
- The user is first presented with a home page. The nav bar provides the user with all essential links. To add or view a recipe the user must only click upon the respective link. If they click on <Add a Recipe> they will be brought to this page:
+ The user is first presented with a home page. The nav bar provides the user with all essential links. To add or view a recipe the user must only click upon the respective link. If they click on 'Add a Recipe' they will be brought to this page:
  
  
  ![Add Recipe](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/Add_Recipe.png)
@@ -95,7 +95,7 @@ The database contains three tables: a Recipes table, which has a one-to-many rel
  ![Add Instructions](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/Add_Instructions.png)
  
  <br>
- As before, the user may fill in as many steps and instructions as the recipe requires. When they are satisfied, they can navigate to the <Recipes> page where they will find their recipe added to the list of recipes on the site.
+ As before, the user may fill in as many steps and instructions as the recipe requires. When they are satisfied, they can navigate to the Recipes page where they will find their recipe added to the list of recipes on the site.
  
  ![Recipes](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/Recipes.png)
  
@@ -107,7 +107,7 @@ The database contains three tables: a Recipes table, which has a one-to-many rel
  ![Recipe2](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/Recipe-2.png)
  
  <br>
- The user can view the recipe with ease and even make adjustments to it. The <rewrite ingredients> link deletes the ingredient list and redirects the user to the <add ingredients> page so that they can input the ingredient entries again. The <update instructions> hyperlink exists for every instruction in each recipe, when clicked it redirects the user to the below page.
+ The user can view the recipe with ease and even make adjustments to it. The 'rewrite ingredients' link deletes the ingredient list and redirects the user to the <add ingredients> page so that they can input the ingredient entries again. The 'update instructions' hyperlink exists for every instruction in each recipe, when clicked it redirects the user to the below page.
  
   ![Update Instructions](https://github.com/ciarafennessy/Fundamental_Project_Repo/blob/Development/Figures/Update%20Instruction.png)
  
